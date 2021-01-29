@@ -1,0 +1,17 @@
+.footer {
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: #0099ff;
+}
+
+.footer p {
+  margin: 0 65px;
+}
+
+.footer a {
+  text-decoration: white underline;
+}

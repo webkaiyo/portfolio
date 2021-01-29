@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
 import { GridContent } from '../components/grids'
+import { Footer } from '../components/bases'
 
 function Grid() {
   return (
@@ -55,6 +56,7 @@ function Home() {
     <>
       <Grid />
       <Content />
+      <Footer />
     </>
   )
 }
