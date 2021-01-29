@@ -43,3 +43,23 @@
   max-width: 1020px;
   text-align: center;
 }
+
+/* separator */
+.separator {
+  background-color: #ccc;
+  height: 1px;
+  width: 60px;
+  margin-top: 75px;
+  margin: 75px auto 0;
+}
+
+/* about */
+.about {
+  margin: 25px auto 0;
+    max-width: 768px;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 25px;
+}

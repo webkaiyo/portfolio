@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { GridContent } from '../components/grids'
 import { Footer } from '../components/bases'
+import { getAge } from '../utils'
 
 function Grid() {
   return (
@@ -51,11 +52,30 @@ function Content() {
   )
 }
 
+function About() {
+  const age = getAge(new Date(2002, 7, 13))
+
+  return (
+    <>
+      <div className={styles.separator}></div>
+      <div className={styles.about}>
+        <h2>Afinal, quem sou eu?</h2>
+        <p>
+          Olá! Meu nome é Caio Alexandre. Sou um desenvolvedor proficiente em Python de {age} anos!
+          Atualmente moro no Distrito Federal e estou procurando novas vagas para estágio. Garanto
+          que irei ser uma grande adição para sua empresa! Para mais informações, me mande um e-mail.
+        </p>
+      </div>
+    </>
+  )
+}
+
 function Home() {
   return (
     <>
       <Grid />
       <Content />
+      <About />
       <Footer />
     </>
   )
