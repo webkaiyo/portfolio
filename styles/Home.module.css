@@ -14,14 +14,32 @@
   text-align: center;
 }
 
+/* content */
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 /* welcoming */
 .welcoming {
   text-align: center;
-  max-width: 1280px;
-  margin: 0 auto;
   font-size: 18pt;
 }
 
 .welcoming h2 {
   margin-bottom: 20px;
+}
+
+.welcoming p {
+  margin-bottom: 60px;
+}
+
+/* skills */
+.skills {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1020px;
+  text-align: center;
 }
