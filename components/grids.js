@@ -12,7 +12,7 @@ const Container = styled.div`
   }
 `
 
-function ContentGrid(props) {
+function GridContent(props) {
   const children = props.children
   return (
     <Container>
@@ -21,4 +21,4 @@ function ContentGrid(props) {
   )
 }
 
-export { ContentGrid }
+export { GridContent }
