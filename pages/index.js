@@ -18,7 +18,7 @@ function Welcoming() {
   return (
     <>
       <div className={styles.welcoming}>
-        <h2>Olá, estive esperando você chegar! 👋</h2>
+        <h2>Olá, estava esperando você chegar! 👋</h2>
         <p>Sou Caio Alexandre, um programador procurando aventuras pelos cosmos.</p>
       </div>
     </>
