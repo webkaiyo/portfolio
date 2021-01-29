@@ -1,0 +1,27 @@
+/* grid */
+.grid {
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0099ff;
+}
+
+.grid h1 {
+  font-size: 30pt;
+  width: 425px;
+  text-align: center;
+}
+
+/* welcoming */
+.welcoming {
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 18pt;
+}
+
+.welcoming h2 {
+  margin-bottom: 20px;
+}
