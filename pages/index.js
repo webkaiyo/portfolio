@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
-import { GridContent } from '../components/grids'
+import { GridContent, ContactGrid } from '../components/grids'
 import { Footer } from '../components/bases'
 import { getAge } from '../utils'
 
@@ -70,12 +70,33 @@ function About() {
   )
 }
 
+function Contact() {
+  return (
+    <>
+      <div className={styles.separator}></div>
+      <div className={styles.contact}>
+        <h2>Então bora lá?</h2>
+        <p>
+          Se você acha que me enquadro no perfil que procura, então faça contato comigo por alguma
+          dessas mídias, responderei o mais rápido possível!
+        </p>
+        <div className={styles.contact_grid}>
+          <ContactGrid path="/github.svg" to="https://github.com/webkaiyo" />
+          <ContactGrid path="/mail.svg" to="mailto:contato.kaiyo@gmail.com" />
+          <ContactGrid path="/twitter.svg" to="https://twitter.com/webkaiyo" />
+        </div>
+      </div>
+    </>
+  )
+}
+
 function Home() {
   return (
     <>
       <Grid />
       <Content />
       <About />
+      <Contact />
       <Footer />
     </>
   )

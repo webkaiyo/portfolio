@@ -1,6 +1,8 @@
+import Image from 'next/image'
+
 import styled from 'styled-components'
 
-const Container = styled.div`
+const GridContainer = styled.div`
   border: #eee solid 2px;
   border-radius: 4px;
   padding: 15px 35px;
@@ -15,10 +17,21 @@ const Container = styled.div`
 function GridContent(props) {
   const children = props.children
   return (
-    <Container>
+    <GridContainer>
       <span>{children}</span>
-    </Container>
+    </GridContainer>
   )
 }
 
-export { GridContent }
+function ContactGrid(props) {
+  const path = props.path
+  const to = props.to
+
+  return (
+    <a href={to} target="_blank">
+      <Image src={path} height={25} width={25} />
+    </a>
+  )
+}
+
+export { GridContent, ContactGrid }

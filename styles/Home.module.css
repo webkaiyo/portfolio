@@ -49,17 +49,41 @@
   background-color: #ccc;
   height: 1px;
   width: 60px;
-  margin-top: 75px;
-  margin: 75px auto 0;
+  margin: 75px auto 25px;
 }
 
 /* about */
 .about {
-  margin: 25px auto 0;
-    max-width: 768px;
+  margin: 0 auto;
+  max-width: 768px;
   text-align: center;
 }
 
 .about h2 {
   margin-bottom: 25px;
+}
+
+/* contact */
+.contact {
+  margin: 0 auto;
+  max-width: 768px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 25px;
+}
+
+.contact p {
+  margin-bottom: 25px;
+}
+
+/* contact grid */
+.contact_grid {
+  display: grid;
+  gap: 24px;
+  grid-auto-flow: column;
+  margin: 0 auto;
+  max-width: 240px;
+  text-align: center;
 }
