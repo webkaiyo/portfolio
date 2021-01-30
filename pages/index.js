@@ -65,6 +65,17 @@ function About() {
           Atualmente moro no Distrito Federal e estou procurando novas vagas para estágio. Garanto
           que irei ser uma grande adição para sua empresa! Para mais informações, me mande um e-mail.
         </p>
+        <div className={styles.separator}></div>
+        <h2>Ok, mas... o que você já fez?</h2>
+        <p className={styles.apps_worked_on}>
+          Ótima pergunta! Caso esteja se perguntando quais aplicações eu já trabalhei então irei citar algumas:
+        </p>
+        <p>
+          <a href="https://github.com/cosmic-team/bellatrix" target="_blank">Bellatrix</a> - um bot para Discord feito em Python.
+        </p>
+        <p>
+          <a href="https://github.com/webkaiyo/portfolio" target="_blank">Este portfólio</a> - este portfólio feito em NextJS.
+        </p>
       </div>
     </>
   )
